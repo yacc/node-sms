@@ -24,7 +24,7 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yacc/node-sms/issues"
-  }
+  },
   "devDependencies": {
    "mocha": "",
    "should": ""
