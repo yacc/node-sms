@@ -1,0 +1,32 @@
+{
+  "name": "node-sms",
+  "version": "0.0.1",
+  "description": "Email to SMS gateway library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yacc/node-sms.git"
+  },
+  "keywords": [
+    "sms",
+    "email",
+    "gateway",
+    "free",
+    "twillio"
+  ],
+  "author": "Yacin Bahi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yacc/node-sms/issues"
+  }
+  "devDependencies": {
+   "mocha": "",
+   "should": ""
+ }
+}
