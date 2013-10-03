@@ -2,11 +2,25 @@ var should = require('should');
 var sendsms = require('../lib/main');
 
 describe('sendsms', function() {
-  describe('with no arguments', function() {
-   it('returns an error', function() {
-     var result = sendsms();
-     result.should.eql('Please provide a phone number, a phone carrier');
-   });
- });
+
+  describe('with an empty array argument', function() {
+    it('calls the callback with an empty array', function(done) {
+      var result = sendsms([], function(result) {
+        result.should.eql('Please provide a country code, a phone number (6503944444) and a phone carrier');
+        done();
+      });
+    });
+  });
+
+  describe('with valid arguments', function() {
+    it('calls the callback with a success message', function(done) {
+      var result = sendsms(['1','6503444444','TMobile'], function(result) {
+        result.should.eql('message sent to +1 6503444444 through TMobile');
+        done();
+      });
+    });
+  });
+
+
 });
 
