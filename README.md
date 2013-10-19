@@ -34,6 +34,6 @@ change to the root directory of the module, then ran the following command.
 
     npm test
 
-Impiration
-==========
+Inspiration
+===========
 this nodejs module was inspired by the "sms-fu" Ruy on Rails plugin https://github.com/yacc/sms-fu
