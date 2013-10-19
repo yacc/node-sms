@@ -14,7 +14,7 @@ describe('sendsms', function() {
 
   describe('with valid arguments', function() {
     it('calls the callback with a success message', function(done) {
-      var result = sendsms(['1','6503444444','TMobile'], function(result) {
+      var sms = sendsms(['US','6503444444','TMobile'], function(err,result) {
         result.should.eql('message sent to +1 6503444444 through TMobile');
         done();
       });

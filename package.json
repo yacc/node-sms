@@ -25,9 +25,13 @@
   "bugs": {
     "url": "https://github.com/yacc/node-sms/issues"
   },
+  "dependencies":{
+    "nodemailer": "", 
+    "inflection": ""    
+  },
   "devDependencies": {
    "mocha": "",
    "should": ""
- },
- "bin": { "sleep-sort": "./bin/sendsms" }
+  },
+ "bin": { "sendsms": "./bin/sendsms" }
 }
